@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Setup users" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with no mock data" tests="2" failures="0" errors="0">
+    <testcase name="#3 Was an empty list of items returned?"/>
+    <testcase name="#4 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Setup database" tests="7" failures="0" errors="0">
+    <testcase name="#5 The toolchain database was cleaned up."/>
+    <testcase name="#6 Was the mock toolchain data added successfully?"/>
+    <testcase name="#7 Was the mock toolchain data added successfully?"/>
+    <testcase name="#8 Was the mock toolchain data added successfully?"/>
+    <testcase name="#9 Was the mock toolchain data added successfully?"/>
+    <testcase name="#10 Was the mock toolchain data added successfully?"/>
+    <testcase name="#11 Was the mock toolchain data added successfully?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/{muuid} for a toolchain and a deployable in the same org on YS1" tests="3" failures="0" errors="0">
+    <testcase name="#12 Was the right status code returned?"/>
+    <testcase name="#13 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#14 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/{muuid} for a non-existent mapping" tests="1" failures="0" errors="0">
+    <testcase name="#15 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings" tests="3" failures="0" errors="0">
+    <testcase name="#16 Did the returned results contain the right number of documents?"/>
+    <testcase name="#17 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#18 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with toolchain_uuid filtering" tests="3" failures="0" errors="0">
+    <testcase name="#19 Did the returned results contain the right number of documents?"/>
+    <testcase name="#20 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#21 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with deployable_guid filtering" tests="3" failures="0" errors="0">
+    <testcase name="#22 Did the returned results contain the right number of documents?"/>
+    <testcase name="#23 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#24 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with deployable_guid and toolchain_guid filtering" tests="3" failures="0" errors="0">
+    <testcase name="#25 Did the returned results contain the right number of documents?"/>
+    <testcase name="#26 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#27 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with non-valid query filtering" tests="3" failures="0" errors="0">
+    <testcase name="#28 Did the returned results contain the right number of documents?"/>
+    <testcase name="#29 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#30 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with non-valid toolchain_guid filtering" tests="2" failures="0" errors="0">
+    <testcase name="#31 Was an empty list of items returned?"/>
+    <testcase name="#32 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with non-valid deployable_guid filtering" tests="2" failures="0" errors="0">
+    <testcase name="#33 Was an empty list of items returned?"/>
+    <testcase name="#34 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with non-valid deployable_guid and toolchain_guid filtering" tests="2" failures="0" errors="0">
+    <testcase name="#35 Was an empty list of items returned?"/>
+    <testcase name="#36 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with partially specified deployable_guid" tests="2" failures="0" errors="0">
+    <testcase name="#37 Was an empty list of items returned?"/>
+    <testcase name="#38 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with wildcard(*) in specified deployable_guid" tests="2" failures="0" errors="0">
+    <testcase name="#39 Was an empty list of items returned?"/>
+    <testcase name="#40 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings with partially specified toolchain_uuid" tests="2" failures="0" errors="0">
+    <testcase name="#41 Was an empty list of items returned?"/>
+    <testcase name="#42 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/{muuid} when user is not a member of both the toolchain and deployable org" tests="1" failures="0" errors="0">
+    <testcase name="#43 Was a 403 returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/{muuid} when user is not a member of the toolchain org" tests="1" failures="0" errors="0">
+    <testcase name="#44 Was a 403 returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/{muuid} when user is not a member of the deployable org" tests="1" failures="0" errors="0">
+    <testcase name="#45 Was a 403 returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/ when user is authorized to access only a subset of mappings" tests="3" failures="0" errors="0">
+    <testcase name="#46 Was only a subset of mappings returned?"/>
+    <testcase name="#47 Was the right td-mapping returned? Yes? Good."/>
+    <testcase name="#48 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/ with filtering on toolchain that user does not have access to" tests="2" failures="0" errors="0">
+    <testcase name="#49 Was an empty list of items returned?"/>
+    <testcase name="#50 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/ with filtering on deployable that user does not have access to" tests="2" failures="0" errors="0">
+    <testcase name="#51 Was an empty list of items returned?"/>
+    <testcase name="#52 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/ with filtering on both toolchain and deployable that user does not have access to" tests="2" failures="0" errors="0">
+    <testcase name="#53 Was an empty list of items returned?"/>
+    <testcase name="#54 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/ with deployable_guid AND toolchain_uuid filtering when user is not a member of the deployable org but part of the toolchain org" tests="2" failures="0" errors="0">
+    <testcase name="#55 Was an empty list of items returned?"/>
+    <testcase name="#56 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET /toolchain_deployable_mappings/ with deployable_guid AND toolchain_uuid filtering when user is a member of the deployable org but not part of the toolchain org" tests="2" failures="0" errors="0">
+    <testcase name="#57 Was an empty list of items returned?"/>
+    <testcase name="#58 The JSON response passed schema validation"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Teardown" tests="1" failures="0" errors="0">
+    <testcase name="#59 The toolchain database was cleaned up."/>
+  </testsuite>
+</testsuites>

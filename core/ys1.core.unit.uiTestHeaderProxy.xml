@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-ui" name="Test Header Proxy - Setup" tests="1" failures="0" errors="0">
+    <testcase name="#1 Nconf configuration set properly."/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Header Proxy - URL not in proxy whitelist" tests="3" failures="0" errors="0">
+    <testcase name="#2 non whitelisted domain not allowed"/>
+    <testcase name="#3 non whitelisted domain not allowed"/>
+    <testcase name="#4 non whitelisted domain not allowed"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Header Proxy - URL in proxy whitelist" tests="1" failures="0" errors="0">
+    <testcase name="#5 whitelisted domain allowed"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Header Proxy - URL second entry in proxy whitelist" tests="1" failures="0" errors="0">
+    <testcase name="#6 whitelisted domain allowed (2nd entry)"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Header Proxy - URL under whitelisted domain prefix" tests="2" failures="0" errors="0">
+    <testcase name="#7 whitelisted domain allowed"/>
+    <testcase name="#8 whitelisted domain allowed"/>
+  </testsuite>
+</testsuites>

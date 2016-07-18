@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-ui" name="Test Toolchain Utils - compareItems function sorts according to priority array first" tests="3" failures="0" errors="0">
+    <testcase name="#1 did the pipeline tool (first arg) get sorted after the github tool (second arg)?"/>
+    <testcase name="#2 did the pipeline tool (second arg) get sorted after the github tool (first arg)?"/>
+    <testcase name="#3 does sorting the same service instance give comparator value of 0?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Toolchain Utils - compareItems function sorts alphabetically second" tests="2" failures="0" errors="0">
+    <testcase name="#4 did the pipeline tool (first arg) get sorted before the todolist tool (second arg)?"/>
+    <testcase name="#5 did the pipeline tool (second arg) get sorted before the todolist tool (first arg)?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Toolchain Utils - getToolchainServices function" tests="8" failures="0" errors="0">
+    <testcase name="#6 1 toolchain - did a service get filtered out?"/>
+    <testcase name="#7 1 toolchain - is the first service still there and a key now?"/>
+    <testcase name="#8 1 toolchain - is the second service still there and a key now?"/>
+    <testcase name="#9 1 toolchain - did the third service get filtered out?"/>
+    <testcase name="#10 2 toolchains - did a service get filtered out?"/>
+    <testcase name="#11 2 toolchains - is the first service still there and a key now?"/>
+    <testcase name="#12 2 toolchains - is the second service still there and a key now?"/>
+    <testcase name="#13 2 toolchains - did the third service get filtered out?"/>
+  </testsuite>
+</testsuites>

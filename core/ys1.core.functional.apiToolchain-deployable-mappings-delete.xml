@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Setup" tests="9" failures="0" errors="0">
+    <testcase name="#1 The toolchain database was cleaned up."/>
+    <testcase name="#2 Was the mock toolchain data added successfully?"/>
+    <testcase name="#3 Was the mock toolchain data added successfully?"/>
+    <testcase name="#4 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#5 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+    <testcase name="#6 Was the mock toolchain data added successfully?"/>
+    <testcase name="#7 Was the mock toolchain data added successfully?"/>
+    <testcase name="#8 Was the mock toolchain data added successfully?"/>
+    <testcase name="#9 Was the mock toolchain data added successfully?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE /toolchain_deployable_mappings/{muuid} with non-valid muuid" tests="1" failures="0" errors="0">
+    <testcase name="#10 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE /toolchain_deployable_mappings/{muuid} when user is not a member of the toolchain and deployable organization" tests="1" failures="0" errors="0">
+    <testcase name="#11 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE /toolchain_deployable_mappings/{muuid} when user is not a member of the toolchain organization" tests="1" failures="0" errors="0">
+    <testcase name="#12 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE /toolchain_deployable_mappings/{muuid} when user is not a member of the deployable organization" tests="1" failures="0" errors="0">
+    <testcase name="#13 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE /toolchain_deployable_mappings/{muuid}" tests="1" failures="0" errors="0">
+    <testcase name="#14 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE /toolchains delete associated toolchain_deployable_mappings" tests="2" failures="0" errors="0">
+    <testcase name="#15 Was the right status code returned?"/>
+    <testcase name="#16 Was the items list returned empty?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Teardown" tests="1" failures="0" errors="0">
+    <testcase name="#17 The toolchain database was cleaned up."/>
+  </testsuite>
+</testsuites>

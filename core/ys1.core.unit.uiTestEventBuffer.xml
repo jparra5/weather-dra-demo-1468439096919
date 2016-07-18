@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-ui" name="replay with no data" tests="1" failures="0" errors="0">
+    <testcase name="#1 should be equal"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Event Buffer - data types" tests="5" failures="0" errors="0">
+    <testcase name="#2 should be equal"/>
+    <testcase name="#3 should be equal"/>
+    <testcase name="#4 should be equal"/>
+    <testcase name="#5 should be equal"/>
+    <testcase name="#6 should be equal"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Event Buffer - simple tests" tests="7" failures="0" errors="0">
+    <testcase name="#7 should be equal"/>
+    <testcase name="#8 should be equal"/>
+    <testcase name="#9 should be equal"/>
+    <testcase name="#10 should be equal"/>
+    <testcase name="#11 should be equal"/>
+    <testcase name="#12 should be equal"/>
+    <testcase name="#13 should be equal"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Test Event Buffer - lots of data" tests="0" failures="0" errors="0"/>
+</testsuites>

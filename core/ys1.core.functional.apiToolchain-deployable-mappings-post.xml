@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Setup" tests="4" failures="0" errors="0">
+    <testcase name="#1 The toolchain database was cleaned up."/>
+    <testcase name="#2 Was test data loaded successfully? Huh? Was it?"/>
+    <testcase name="#3 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#4 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with empty value for all fields" tests="2" failures="0" errors="0">
+    <testcase name="#5 Did the test utilities grab the status code?"/>
+    <testcase name="#6 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with null for all fields" tests="2" failures="0" errors="0">
+    <testcase name="#7 Did the test utilities grab the status code?"/>
+    <testcase name="#8 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings for a toolchain and deployable in the same org on YS1." tests="1" failures="0" errors="0">
+    <testcase name="#9 Was the toolchain-deployable mapping created successfully?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings for a toolchain and deployable in the same org on YS1 when service is not associated with the toolchain specified" tests="6" failures="0" errors="0">
+    <testcase name="#10 Was the service instance creation successful?"/>
+    <testcase name="#11 Was the get service instance successful?"/>
+    <testcase name="#12 Was the get service instance returned with the correct service_id?"/>
+    <testcase name="#13 Was the get service instance returned with the correct uuid?"/>
+    <testcase name="#14 Was the toolchain-deployable mapping creation unsuccessful?"/>
+    <testcase name="#15 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings for a toolchain and deployable in the same org on YS1 when service_instance is bounded to toolchain" tests="7" failures="0" errors="0">
+    <testcase name="#16 Was the service instance creation successful?"/>
+    <testcase name="#17 Was the get service instance successful?"/>
+    <testcase name="#18 Was the get service instance returned with the correct service_id?"/>
+    <testcase name="#19 Was the get service instance returned with the correct uuid?"/>
+    <testcase name="#20 Was the service instance bound to the toolchain successfully?"/>
+    <testcase name="#21 Was the toolchain-deployable mapping creation successful?"/>
+    <testcase name="#22 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings for an existing mapping" tests="2" failures="0" errors="0">
+    <testcase name="#23 Did the test utilities grab the status code?"/>
+    <testcase name="#24 Did the reponse return a 409 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with missing properties in the JSON request body" tests="2" failures="0" errors="0">
+    <testcase name="#25 Did the test utilities grab the status code?"/>
+    <testcase name="#26 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with missing properties in the JSON request body" tests="2" failures="0" errors="0">
+    <testcase name="#27 Did the test utilities grab the status code?"/>
+    <testcase name="#28 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with additional properties in the JSON request body" tests="2" failures="0" errors="0">
+    <testcase name="#29 Did the test utilities grab the status code?"/>
+    <testcase name="#30 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with missing properties in the JSON request body" tests="2" failures="0" errors="0">
+    <testcase name="#31 Did the test utilities grab the status code?"/>
+    <testcase name="#32 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with missing properties in the JSON request body" tests="2" failures="0" errors="0">
+    <testcase name="#33 Did the test utilities grab the status code?"/>
+    <testcase name="#34 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with additional properties in the JSON request body" tests="2" failures="0" errors="0">
+    <testcase name="#35 Did the test utilities grab the status code?"/>
+    <testcase name="#36 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with non-existing toolchain_uuid" tests="2" failures="0" errors="0">
+    <testcase name="#37 Did the test utilities grab the status code?"/>
+    <testcase name="#38 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with non-existing service_id" tests="2" failures="0" errors="0">
+    <testcase name="#39 Did the test utilities grab the status code?"/>
+    <testcase name="#40 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with non-empty id when source type is ui" tests="2" failures="0" errors="0">
+    <testcase name="#41 Did the test utilities grab the status code?"/>
+    <testcase name="#42 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with empty id when source type is service_instance" tests="2" failures="0" errors="0">
+    <testcase name="#43 Did the test utilities grab the status code?"/>
+    <testcase name="#44 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with invalid source type" tests="2" failures="0" errors="0">
+    <testcase name="#45 Did the test utilities grab the status code?"/>
+    <testcase name="#46 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with invalid app type" tests="2" failures="0" errors="0">
+    <testcase name="#47 Did the test utilities grab the status code?"/>
+    <testcase name="#48 Did the reponse return a 400 status code? It better have."/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings with invalid deployable org" tests="1" failures="0" errors="0">
+    <testcase name="#49 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings when user is neither part of the toolchain organization nor the deployable organization" tests="1" failures="0" errors="0">
+    <testcase name="#50 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings when user is a part of the deployable organization but not toolchain organization" tests="1" failures="0" errors="0">
+    <testcase name="#51 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST /toolchain_deployable_mappings when user is a part of the toolchain organization but not deployable organization" tests="1" failures="0" errors="0">
+    <testcase name="#52 Was the right status code returned?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Teardown" tests="1" failures="0" errors="0">
+    <testcase name="#53 The toolchain database was cleaned up."/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Toolchain Scenario - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Toolchain Scenario - POST Toolchain all parameters" tests="1" failures="1" errors="0">
+    <testcase name="#3 {&quot;description&quot;:&quot;Error: Toolchain with specified key already exists&quot;}">
+      <failure>
+          ---
+            operator: fail
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite package="otc-api" name="Toolchain Scenario - POST Toolchain organization_guid undefined" tests="1" failures="0" errors="0">
+    <testcase name="#4 Did toolchain creation fail without an organization_guid?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Toolchain Scenario - POST Toolchain organization_guid invalid" tests="1" failures="0" errors="0">
+    <testcase name="#5 Did toolchain creation fail with an incorrect organization_guid?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Toolchain Scenario - POST Toolchain w/ user in another org" tests="1" failures="0" errors="0">
+    <testcase name="#6 Did toolchain creation fail w/ user in another org?"/>
+  </testsuite>
+</testsuites>

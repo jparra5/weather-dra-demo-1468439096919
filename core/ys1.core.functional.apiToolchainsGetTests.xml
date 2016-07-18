@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Toolchains API - Test Setup" tests="3" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+    <testcase name="#2 was the mock toolchain data added?"/>
+    <testcase name="#3 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET All Toolchains" tests="2" failures="1" errors="0">
+    <testcase name="#4 did the GET toolchains API call succeed?">
+      <failure>
+          ---
+            operator: equal
+            expected: 6
+            actual: 7
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#5 did the GET toolchains API provide the right organization_guid?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET All Toolchains w/ user in another org" tests="3" failures="1" errors="0">
+    <testcase name="#6 did the GET toolchains for the first user call succeed?">
+      <failure>
+          ---
+            operator: equal
+            expected: 6
+            actual: 7
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#7 did the GET toolchains API provide the right organization_guid?"/>
+    <testcase name="#8 did the GET toolchains API w/ user in another org call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains by name (regex) - GET /api/v1/toolchains/name=xxx" tests="1" failures="0" errors="0">
+    <testcase name="#9 did the GET toolchains by name (regex) call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains by name (single) - GET /api/v1/toolchains/name=xxx" tests="2" failures="0" errors="0">
+    <testcase name="#10 did the GET toolchains by name call succeed?"/>
+    <testcase name="#11 was the GET toolchains by name call correct?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains by non-existent name (single) - GET /api/v1/toolchains/name=xxx" tests="1" failures="0" errors="0">
+    <testcase name="#12 did the GET toolchains by non-existent name call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchain by key - GET /api/v1/toolchains/key=xxx" tests="2" failures="0" errors="0">
+    <testcase name="#13 did the GET toolchains by key call succeed?"/>
+    <testcase name="#14 was the GET toolchains by key call correct?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchain by non-existent key - GET /api/v1/toolchains/key=xxx" tests="1" failures="0" errors="0">
+    <testcase name="#15 did the GET toolchains by non-existent call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET a specific toolchain with include=services w/ user in another org - GET /api/v2/toolchains/uuid5?include=services" tests="1" failures="0" errors="0">
+    <testcase name="#16 Did include=services w/ user in another org fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET a specific toolchain with include=everything w/ user in another org - GET /api/v2/toolchains/uuid5?include=everything" tests="1" failures="0" errors="0">
+    <testcase name="#17 Did include=everything w/ user in another org fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET a specific toolchain with include=metadata w/ user in another org - GET /api/v2/toolchains/uuid5?include=metadata" tests="1" failures="0" errors="0">
+    <testcase name="#18 Did include=metadata w/ user in another org fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET include parameter - GET /api/v1/toolchains/?include=nothing" tests="1" failures="0" errors="0">
+    <testcase name="#19 did the GET toolchains include=nothing call fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET a specific toolchain with include=nothing - GET /api/v1/toolchains/uuid5?include=nothing" tests="1" failures="0" errors="0">
+    <testcase name="#20 did the GET toolchains include=nothing call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET a specific toolchain with include=nothing w/ user in another org - GET /api/v2/toolchains/uuid5?include=nothing" tests="1" failures="0" errors="0">
+    <testcase name="#21 Did include=nothing w/ user in another org succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET key + include parameter - GET /api/v1/toolchains/key=xxx&amp;include=nothing" tests="1" failures="0" errors="0">
+    <testcase name="#22 did the GET toolchains key + include parameter call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET non-existent key + include parameter - GET /api/v1/toolchains/key=xxx&amp;include=nothing" tests="1" failures="0" errors="0">
+    <testcase name="#23 did the GET toolchains non-existent key + include parameter call fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET a specific toolchain with include=fields w/ user in another org - GET /api/v2/toolchains/uuid5?include=fields" tests="1" failures="0" errors="0">
+    <testcase name="#24 Did include=fields w/ user in another org fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains limit = 1 - GET /api/v1/toolchains/limit=1" tests="1" failures="0" errors="0">
+    <testcase name="#25 did the GET toolchains limit call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains invalid limit param - GET /api/v1/toolchains/limit=36" tests="1" failures="0" errors="0">
+    <testcase name="#26 did the GET toolchains invalid limit call fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains by uuid - GET /api/v1/toolchains/:toolchain_guid" tests="3" failures="0" errors="0">
+    <testcase name="#27 did the GET toolchains by uuid call succeed?"/>
+    <testcase name="#28 did the GET toolchains by uuid provide the right name?"/>
+    <testcase name="#29 did the GET toolchains by uuid provide the right organization_guid?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains by uuid w/ user in another org - GET /api/v1/toolchains/:uuid" tests="1" failures="0" errors="0">
+    <testcase name="#30 did the GET toolchains by uuid w/ user in another org call fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains by non-existent uuid - GET /api/v1/toolchains/:toolchain_guid" tests="1" failures="0" errors="0">
+    <testcase name="#31 did the GET toolchains by non-existent uuid call fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET services of a non-existent toolchain - GET /api/v1/toolchains/:guid/services" tests="1" failures="0" errors="0">
+    <testcase name="#32 did the GET services of a non-existent toolchain return 404?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET empty services of a toolchain - GET /api/v1/toolchains/:guid/services" tests="1" failures="0" errors="0">
+    <testcase name="#33 did the GET services of a toolchain without services fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET services of a toolchain that belongs to another user - GET /api/v1/toolchains/:guid/services" tests="1" failures="0" errors="0">
+    <testcase name="#34 did the GET services of a toolchain w/ user in another org fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET services of a toolchain w/ no auth - GET /api/v1/toolchains/:guid/services" tests="1" failures="0" errors="0">
+    <testcase name="#35 did the GET services of a toolchain w/ no auth fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains status authenticated - GET /status" tests="2" failures="0" errors="0">
+    <testcase name="#36 did the GET status authenticated call on / succeed?"/>
+    <testcase name="#37 did the GET status authenticated call on /status succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains status unauthenticated - GET /status" tests="2" failures="0" errors="0">
+    <testcase name="#38 did the GET status unauthenticated call on / succeed?"/>
+    <testcase name="#39 did the GET status unauthenticated call on /status succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET build version authenticated - GET /version" tests="1" failures="0" errors="0">
+    <testcase name="#40 did the GET version call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET build version unauthenticated - GET /version" tests="1" failures="0" errors="0">
+    <testcase name="#41 did the GET version call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchain without authentication -  GET /api/v1/toolchains" tests="1" failures="0" errors="0">
+    <testcase name="#42 is the get all toolchains call unauthenticated?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET invalid route with authentication -  GET /random" tests="1" failures="0" errors="0">
+    <testcase name="#43 did get invalid route with authentication fail?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains with specified organization_guid - GET /api/v1/toolchains/?organization_guid=xxx" tests="1" failures="1" errors="0">
+    <testcase name="#44 did the GET toolchains by with organization_guid succeed?">
+      <failure>
+          ---
+            operator: equal
+            expected: 6
+            actual: 7
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains with specified invalid organization_guid - GET /api/v1/toolchains/?organization_guid=xxx" tests="1" failures="0" errors="0">
+    <testcase name="#45 did the GET toolchains by with organization_guid return nothing?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET toolchains with specified organization_guid that a user is not in - GET /api/v1/toolchains/?organization_guid=xxx" tests="1" failures="0" errors="0">
+    <testcase name="#46 did the GET toolchains call fail when the user is not a member of the organization?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Teardown" tests="1" failures="0" errors="0">
+    <testcase name="#47 was the mock toolchain data removed successfully?"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="PATCH Toolchains - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="PATCH Toolchains - PATCH /api/v1/toolchains/uuid" tests="3" failures="3" errors="0">
+    <testcase name="#3 Was the create toolchain successful?">
+      <failure>
+          ---
+            operator: equal
+            expected: randallX
+            actual: undefined
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#4 Was the toolchain name successfully updated?">
+      <failure>
+          ---
+            operator: equal
+            expected: 204
+            actual: 400
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#5 Was the clean-up toolchain step successful?">
+      <failure>
+          ---
+            operator: equal
+            expected: 204
+            actual: 400
+            at: _fulfilled (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:834:54)
+          ...
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite package="otc-api" name="PATCH Toolchains with incorrect uuid - PATCH /api/v1/toolchains/uuid" tests="1" failures="0" errors="0">
+    <testcase name="#6 Was the toolchain update with wrong uuid unsuccessful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="PATCH Toolchains w/ user in another org - PATCH /api/v1/toolchains/uuid" tests="2" failures="2" errors="0">
+    <testcase name="#7 plan != count">
+      <failure>
+          ---
+            operator: fail
+            expected: 3
+            actual: 0
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#8 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

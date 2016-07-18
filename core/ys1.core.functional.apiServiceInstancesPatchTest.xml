@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="PATCH Service Instances - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="PATCH Service Instances" tests="12" failures="0" errors="0">
+    <testcase name="#3 Did POST service_instances succeed?"/>
+    <testcase name="#4 Was the service instance creation successful?"/>
+    <testcase name="#5 Did PATCH service_instances succeed?"/>
+    <testcase name="#6 Did PATCH service_instances return an empty body?"/>
+    <testcase name="#7 Did GET service_instances succeed?"/>
+    <testcase name="#8 Did the service instance ID match?"/>
+    <testcase name="#9 Did the parameters match?"/>
+    <testcase name="#10 Did PATCH service_instances succeed?"/>
+    <testcase name="#11 Did PATCH service_instances return an empty body?"/>
+    <testcase name="#12 Did GET service_instances succeed?"/>
+    <testcase name="#13 Did the parameters match?"/>
+    <testcase name="#14 Was the service_instance deleted correctly?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="PATCH Service Instances - failure cases" tests="13" failures="0" errors="0">
+    <testcase name="#15 Did POST service_instances succeed?"/>
+    <testcase name="#16 Was the service instance creation successful?"/>
+    <testcase name="#17 Was the update rejected for required service_id field missing?"/>
+    <testcase name="#18 Was the update rejected for a service_id that does not match the service instance?"/>
+    <testcase name="#19 Was the update rejected for user being not member of the org that the service instance is in?"/>
+    <testcase name="#20 Was the service instance patch rejected for an organization_guid mismatch?"/>
+    <testcase name="#21 Was the update rejected for service_instance_id not found?"/>
+    <testcase name="#22 Did a PATCH with an empty parameters body succeed?"/>
+    <testcase name="#23 Did GET service_instances succeed?"/>
+    <testcase name="#24 Did the service instance ID match?"/>
+    <testcase name="#25 Did the parameters match?"/>
+    <testcase name="#26 Was the update rejected for a String parameters value?"/>
+    <testcase name="#27 Was the service_instance deleted correctly?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="PATCH Service Instances - failure cases" tests="12" failures="0" errors="0">
+    <testcase name="#28 Did POST service_instances succeed?"/>
+    <testcase name="#29 Was the service instance creation successful?"/>
+    <testcase name="#30 Was the update rejected for required service_id field missing?"/>
+    <testcase name="#31 Was the update rejected for a service_id that does not match the service instance?"/>
+    <testcase name="#32 Was the update rejected for user being not member of the org that the service instance is in?"/>
+    <testcase name="#33 Was the update rejected for service_instance_id not found?"/>
+    <testcase name="#34 Did a PATCH with an empty parameters body succeed?"/>
+    <testcase name="#35 Did GET service_instances succeed?"/>
+    <testcase name="#36 Did the service instance ID match?"/>
+    <testcase name="#37 Did the parameters match?"/>
+    <testcase name="#38 Was the update rejected for a String parameters value?"/>
+    <testcase name="#39 Was the service_instance deleted correctly?"/>
+  </testsuite>
+</testsuites>

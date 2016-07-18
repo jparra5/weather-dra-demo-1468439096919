@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="GET Service Instances - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET Service Instances - GET /api/v1/service_instances/suid" tests="5" failures="0" errors="0">
+    <testcase name="#3 Was the service instance creation successful?"/>
+    <testcase name="#4 Was the get service instance successful?"/>
+    <testcase name="#5 Was the get service instance returned with the correct service_id?"/>
+    <testcase name="#6 Was the get service instance returned with the correct uuid?"/>
+    <testcase name="#7 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET Service Instances - GET /api/v1/service_instances/suid with unknown suid" tests="1" failures="0" errors="0">
+    <testcase name="#8 Was the get service instance unsuccessful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET Service Instances - GET /api/v1/service_instances/suid w/ user in another org" tests="3" failures="0" errors="0">
+    <testcase name="#9 Was the service instance creation successful?"/>
+    <testcase name="#10 Was the get service instance w/ user in another org unsuccessful?"/>
+    <testcase name="#11 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="GET Service Instances - GET /api/v1/service_instances/suid with no auth" tests="3" failures="0" errors="0">
+    <testcase name="#12 Was the service instance creation successful?"/>
+    <testcase name="#13 Was the get service instance call unauthorized?"/>
+    <testcase name="#14 Was the delete service instance successful?"/>
+  </testsuite>
+</testsuites>

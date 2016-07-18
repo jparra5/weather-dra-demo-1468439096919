@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-ui" name="test getMaxColumnLength" tests="1" failures="0" errors="0">
+    <testcase name="#1 did the max length of columns get returned?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="getShortenedToolLabel test length &lt; 3" tests="2" failures="0" errors="0">
+    <testcase name="#2 did the same label get returned for a label with length=1?"/>
+    <testcase name="#3 did the same label get returned for a label with length=2?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="getShortenedToolLabel test length >= 3?" tests="4" failures="0" errors="0">
+    <testcase name="#4 did the shortened label get returned for a label with length>=3 (pass in shorter label)?"/>
+    <testcase name="#5 did the shortened label get returned for a label with length>=3 (pass in longer label)?"/>
+    <testcase name="#6 did the shortened label get returned while reversing the order of tool labels (pass in shorter label)?"/>
+    <testcase name="#7 did the shortened label get returned while reversing the order of tool labels (pass in longer label)?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getShortenedToolLabel with blank labels" tests="2" failures="0" errors="0">
+    <testcase name="#8 did the shortened label get returned with a blank parameters object?"/>
+    <testcase name="#9 did the shortened label get returned with one empty parameters object + 1 valid (shorter) parameters object?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getInitializedRequestMatrix" tests="1" failures="0" errors="0">
+    <testcase name="#10 does the initialized matrix exclude single-column labels?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test alphabeticallySortTools" tests="2" failures="0" errors="0">
+    <testcase name="#11 did the tools get sorted correctly?"/>
+    <testcase name="#12 did sorted tools get left unchanged?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelsWithCurrentRowRequest" tests="1" failures="0" errors="0">
+    <testcase name="#13 were the correct labels returned based on the current row requested?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelsWithCurrentRowRequest" tests="1" failures="0" errors="0">
+    <testcase name="#14 were the correct labels returned based on the current row requested?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelsByNumberOfColumns" tests="1" failures="0" errors="0">
+    <testcase name="#15 were the label counts returned correctly?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelsByNumberOfColumns" tests="1" failures="0" errors="0">
+    <testcase name="#16 were the label counts returned correctly based on being in different columns only?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelsByNumberOfColumns" tests="1" failures="0" errors="0">
+    <testcase name="#17 was the label with the most columns returned?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelWithMostColumns" tests="1" failures="0" errors="0">
+    <testcase name="#18 was the label with the most columns returned?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelWithMostColumns - edge cases" tests="1" failures="0" errors="0">
+    <testcase name="#19 was an empty string returned if no labels are requesting the current row?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test getLabelWithMostColumns - check reverse alphabetically sorted second" tests="1" failures="0" errors="0">
+    <testcase name="#20 was the label with the most columns firstly and reverse alphabetically prioritized second selected?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Testing matrixOptimizationHelper" tests="1" failures="0" errors="0">
+    <testcase name="#21 did we get the expected row (1)?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Testing matrixOptimizationHelper" tests="1" failures="0" errors="0">
+    <testcase name="#22 did we get the expected row (2)?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Testing tool tile sorter - sortTiles" tests="1" failures="0" errors="0">
+    <testcase name="#23 did we get the expected sorting?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="test contention for single row" tests="1" failures="0" errors="0">
+    <testcase name="#24 did the tools get sorted correctly?"/>
+  </testsuite>
+  <testsuite package="otc-ui" name="Testing tool tile sorter - sample" tests="1" failures="0" errors="0">
+    <testcase name="#25 did we get the expected sorting?"/>
+  </testsuite>
+</testsuites>

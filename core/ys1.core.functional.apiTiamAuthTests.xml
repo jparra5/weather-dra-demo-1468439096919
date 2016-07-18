@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="TIAM Client - Authenticated with status 200 (Success)" tests="3" failures="0" errors="0">
+    <testcase name="#1 Did the TIAM respond with a bearer token?"/>
+    <testcase name="#2 Did the TIAM respond with organization IDs?"/>
+    <testcase name="#3 Did the TIAM respond with a lease expiry?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="TIAM Client - Unauthenticated status of 401" tests="1" failures="0" errors="0">
+    <testcase name="#4 Did TIAM respond with 401?"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Services API - GET Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed!"/>
+    <testcase name="#2 was the mock toolchain data added?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Services API - Test GET ALL" tests="1" failures="0" errors="0">
+    <testcase name="#3 did the get all services call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Services API - Test GET ALL with Query Params" tests="5" failures="0" errors="0">
+    <testcase name="#4 did providing multiple parameters fail?"/>
+    <testcase name="#5 did the get todolist service call succeed?"/>
+    <testcase name="#6 did the get todolist service call with an invalid id succeed?"/>
+    <testcase name="#7 did the get ksito service call not succeed?"/>
+    <testcase name="#8 did the get todolist and template service call succeed?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Services API - Test GET ALL without authentication" tests="1" failures="0" errors="0">
+    <testcase name="#9 is the get all services call unauthorized?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Teardown" tests="1" failures="0" errors="0">
+    <testcase name="#10 was the mock toolchain data removed successfully?"/>
+  </testsuite>
+</testsuites>

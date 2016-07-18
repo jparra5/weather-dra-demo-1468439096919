@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-ui" name="Testing escapeHTML - replaceWithEntities" tests="6" failures="0" errors="0">
+    <testcase name="#1 did ampersands get replaced?"/>
+    <testcase name="#2 did less-than signs get replaced?"/>
+    <testcase name="#3 did greater-than signs get replaced?"/>
+    <testcase name="#4 did quotes get replaced?"/>
+    <testcase name="#5 did apostrophes get replaced?"/>
+    <testcase name="#6 did combination of all get replaced?"/>
+  </testsuite>
+</testsuites>

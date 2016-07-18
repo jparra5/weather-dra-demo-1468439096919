@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="DELETE Service Instances - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE Service Instances - DELETE /api/v1/service_instances/sid" tests="2" failures="0" errors="0">
+    <testcase name="#3 Was the create service instance successful?"/>
+    <testcase name="#4 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE Service Instances - DELETE /api/v1/service_instances/sid with incorrect sid" tests="1" failures="0" errors="0">
+    <testcase name="#5 Was the delete service instance w/ wrong sid unsuccessful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE Service Instances - DELETE /api/v1/service_instances/sid w/ user in another org" tests="3" failures="0" errors="0">
+    <testcase name="#6 Was the create service instance successful?"/>
+    <testcase name="#7 Was the delete service instance w/ user in another org unsuccessful?"/>
+    <testcase name="#8 Was the clean-up service step successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="DELETE Service Instances - DELETE /api/v1/service_instances/sid with no auth" tests="3" failures="0" errors="0">
+    <testcase name="#9 Was the create service instance successful?"/>
+    <testcase name="#10 Was the delete service instance w/ no auth unsuccessful?"/>
+    <testcase name="#11 Was the clean-up service step successful?"/>
+  </testsuite>
+</testsuites>

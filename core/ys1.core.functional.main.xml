@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="Functional Scenario - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Functional Scenario - Create Toolchain" tests="2" failures="0" errors="0">
+    <testcase name="#3 Was the toolchain creation Successful?"/>
+    <testcase name="#4 Was the toolchain deleted properly?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Functional Scenario - Update toolchain name" tests="4" failures="0" errors="0">
+    <testcase name="#5 Was the toolchain creation Successful?"/>
+    <testcase name="#6 Did the toolchain name fail to update due to mismatched org?"/>
+    <testcase name="#7 Was the toolchain name successfully updated?"/>
+    <testcase name="#8 Was the toolchain deleted properly?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="Functional Scenario - Update toolchain description" tests="13" failures="13" errors="0">
+    <testcase name="#9 TypeError: Cannot read property 'doc' of undefined">
+      <failure>
+          ---
+            operator: fail
+            at: _rejected (/home/pipeline/477229d7-5c17-48e7-8d82-f051fa08b161/node_modules/q/q.js:844:24)
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#10 plan != count">
+      <failure>
+          ---
+            operator: fail
+            expected: 3
+            actual: 1
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#11 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#12 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#13 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#14 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#15 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#16 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#17 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#18 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#19 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#20 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+    <testcase name="#21 test exited without ending">
+      <failure>
+          ---
+            operator: fail
+          ...
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

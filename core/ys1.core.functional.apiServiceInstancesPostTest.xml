@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite package="otc-api" name="POST Service Instances - Test Setup" tests="2" failures="0" errors="0">
+    <testcase name="#1 Authorization passed for mock user: idsb3t4@us.ibm.com"/>
+    <testcase name="#2 Authorization passed for mock user: idsb3t1@us.ibm.com"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances" tests="8" failures="0" errors="0">
+    <testcase name="#3 Was the service instance creation successful?"/>
+    <testcase name="#4 Was the get service instance returned with an instance_id?"/>
+    <testcase name="#5 Was the create service instance returned with parameters?"/>
+    <testcase name="#6 Was the get service instance returned with the correct org id?"/>
+    <testcase name="#7 Was GET service instance successful?"/>
+    <testcase name="#8 Is service instance status not ERROR? (expecting configured or configuring)"/>
+    <testcase name="#9 Is the service instance status not NEW?"/>
+    <testcase name="#10 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with a defined label" tests="3" failures="0" errors="0">
+    <testcase name="#11 Was the service instance creation successful?"/>
+    <testcase name="#12 Was the create service instance returned with a label?"/>
+    <testcase name="#13 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with an empty label" tests="3" failures="0" errors="0">
+    <testcase name="#14 Was the service instance creation successful?"/>
+    <testcase name="#15 Was the create service instance returned with an empty label?"/>
+    <testcase name="#16 Was the delete service instance successful?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with incorrect service id" tests="1" failures="0" errors="0">
+    <testcase name="#17 Was the create service instance unsuccesful due to unknown service id?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with no service id" tests="1" failures="0" errors="0">
+    <testcase name="#18 Was the create service instance unsuccesful due to missing service id?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances w/ user in another org" tests="1" failures="0" errors="0">
+    <testcase name="#19 Was the create service instance unsuccessful due to a user in another org?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances w/ invalid org" tests="1" failures="0" errors="0">
+    <testcase name="#20 Was the create service instance unsuccessful due to an invalid org?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with no org id" tests="1" failures="0" errors="0">
+    <testcase name="#21 Was the create service instance unsuccesful due to missing org id?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with no auth" tests="1" failures="0" errors="0">
+    <testcase name="#22 Was the create service instance call unauthorized?"/>
+  </testsuite>
+  <testsuite package="otc-api" name="POST Service Instances - POST /api/v1/service_instances with no body and invalid parameters" tests="2" failures="0" errors="0">
+    <testcase name="#23 Was the create service instance call without body unsuccessful?"/>
+    <testcase name="#24 Was the create service instance call with an invalid parameters value unsuccessful?"/>
+  </testsuite>
+</testsuites>
